@@ -27,8 +27,8 @@ const ShortOption = () => {
       >
 
           <option value="">Default</option>
-          <option value="priseAsc ">Prise: Low to High</option>
-          <option value="priseDesc">Prise: High to Low</option>
+          <option value="priceAsc">Price: Low to High</option>
+          <option value="priceDesc">Price: High to Low</option>
           <option value="popularity">Popularity</option>
       </select>
     </div>

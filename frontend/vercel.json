@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "bulids":[
+        {
+            "src":"package.json",
+            "use":"@versal/static-build",
+            "config":{"distDir":"dist"}
+        }
+    ],
+    "rewrites":[
+            {"source":"/(.*)", "destination":"/"}
+    ]  
+}

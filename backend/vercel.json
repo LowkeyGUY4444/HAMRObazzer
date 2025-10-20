@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "name":"backend",
+    "bulids":[
+        {
+            "src":"server.js",
+            "use":"@versal/node"
+        }
+    ],
+    "routes":[
+        {
+            "scr":"/(.*)",
+            "dest":"server.js"
+        }
+    ]  
+}

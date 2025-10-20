@@ -1,9 +1,9 @@
 {
     "version": 2,
-    "bulids":[
+    "builds":[
         {
             "src":"package.json",
-            "use":"@versal/static-build",
+            "use":"@vercel/static-build",
             "config":{"distDir":"dist"}
         }
     ],

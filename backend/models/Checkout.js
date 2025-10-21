@@ -1,5 +1,5 @@
 const mongoose= require("mongoose");
-const { checkout } = require("../routes/UserRoutes");
+const { checkout } = require("../routes/userRoutes");
 
 
 const checkoutItemSchema= new mongoose.Schema({

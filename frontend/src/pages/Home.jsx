@@ -21,8 +21,8 @@ const Home = () => {
   useEffect(()=>{
     // fetch product for specific collection 
      dispatch(fetchProductsByFilter({
-      gender: "Women",
-      category:"Bottom Wear",
+      gender: "Men",
+      category:"Top Wear",
       limit: 8,
     })
   );
@@ -56,7 +56,7 @@ const Home = () => {
         {/* collection for  Women section */}
         <div className='container mx-auto '>
           <h2 className='text-3xl font-bold mb-4 text-center'>
-            Top Wares for Women
+            Top Wares for Men
           </h2>
            <Maylike products={products} loading={loading} error={error} />
         </div>

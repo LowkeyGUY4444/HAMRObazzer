@@ -15,8 +15,14 @@ const adminOrderRoutes = require('./routes/adminOrderRoutes');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
-
+app.use(cors(
+    {                                                       //.................
+        origin: ["https://hamrobazzer.vercel.app"],         //.................
+        methods: ["GET", "POST", "PUT", "DELETE"],          //.................
+        credentials: true,                                  //.................
+    }
+));
+//.....dotted lone must be removed while running locally
 dotenv.config();
 console.log(process.env.PORT)
 
@@ -43,6 +49,8 @@ app.use('/api/admin/users', adminRoutes);
 app.use('/api/admin/products', productAdminRoutes);
 app.use('/api/admin/orders', adminOrderRoutes);
 
-app.listen(PORT, () =>{
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () =>{
+//     console.log(`Server is running on http://localhost:${PORT}`);    
+// });
+// .......... for vrecel deployment test.... below line shell be removed for running locally and upper three line must be un-commented
+module.exports = app;

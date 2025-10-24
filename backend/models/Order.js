@@ -1,6 +1,6 @@
 const { sign } = require('jsonwebtoken');
 const mongoose = require('mongoose');
-const { collection } = require('./user');
+const { collection } = require('./User');
 
 const orderItemSchema = new mongoose.Schema({
     productId: {

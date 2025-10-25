@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className='bg-gray-800 text-white border-t py-12 '>
       <div className='container mx-auto  grid grid-cols-1 md:grid-cols-4 gap-8 px-4 lg:px-0'>
-        <div>
+        {/* <div>
             <h3 className='text-lg mb-4'>Newsletters</h3>
             <p className=' text-sm mb-4'>Be the first one to hear about new products, exclusive events, and online offers.</p>
             <p className='text-sm font-medium'>Sign up and get 10% off on your first order.</p>
@@ -30,7 +30,7 @@ const Footer = () => {
                 </button>
             </form>
             
-        </div>
+        </div> */}
 
         {/* shopLinks */}
         <div>

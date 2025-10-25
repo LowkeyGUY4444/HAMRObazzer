@@ -14,7 +14,7 @@ const FeatureSection = () => {
                     <HiShoppingBag className='text-xl' />
                 </div>
                 <h2 className='tracking-tighter mb-2 uppercase'>Free Shipping</h2>
-                <p className='text-gray-600 text-sm tracking-tighter'>On all orders over Rs.50</p>
+                <p className='text-gray-600 text-sm tracking-tighter'>On all orders over Rs.500</p>
             </div>
             {/* Feature 2 */}
             <div className='flex flex-col items-center'>

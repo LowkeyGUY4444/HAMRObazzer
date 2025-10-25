@@ -142,7 +142,7 @@ const NewArrivals = () => {
                             <div className='absolute bottom-0 left-0 right-0 bg-opacity-50 backdrop-blur-md  text-white p-4 rounded-b-lg'>
                                 <Link to={`/product/${item._id}`} className='block'>
                                     <h3 className='font-medium '>{item.name}</h3>
-                                    <p className='mt-1'>{item.price}</p>
+                                    <p className='mt-1'>Rs {item.price}</p>
                                 </Link>
                             </div>
                     </div>

@@ -19,7 +19,7 @@ const TopBar = () => {
             </a>
         </div>
         <div className='text-sm text-center flex-grow'>
-            <span>Super Deal! Free Shipping on Orders Over Rs.50</span>
+            <span>Super Deal! Free Shipping on Orders Over Rs.500</span>
         </div>
         <div className='text-sm hidden md:block'>
             <a href='tel:+97 9848820267' className='hover:text-gary-300'>+97 9848820267</a>

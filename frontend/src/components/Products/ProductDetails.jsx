@@ -188,12 +188,12 @@ const ProductDetails = ({productId}) => {
                 </div> 
             </div>
 
-            {/* for You May Like section */}
+            {/* for You May Like section
             <div className='mt-20'>
                 <h2 className='text-2xl font-bold mb-4 text-center'>You May Also Like</h2>
                 <Maylike  products={similarProducts} loading={loading} error={error} />
 
-            </div>
+            </div> */}
         </div>
         )}
     </div>

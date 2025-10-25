@@ -35,6 +35,7 @@ const OrderManagement = () => {
               <th className='px-4 py-2'>Order ID</th>
               <th className='px-4 py-2'>Customer</th>
               <th className='px-4 py-2'>Total Price</th>
+              <th className='px-4 py-2'>Shipping Address</th>
               <th className='px-4 py-2'>Status</th>
               <th className='px-4 py-2'>Action</th>
             </tr>
@@ -45,7 +46,8 @@ const OrderManagement = () => {
               <tr key={order._id} className='border-b hover:bg-gray-50 cursor-pointer text-left'>
                 <td className='p-4 font-medium text-gray-900 whitespace-nowrap'>#{order._id}</td>
                 <td className='p-4'>{order.user.name}</td>
-                <td className='p-4'>{order.totalPrice}</td>
+                <td className='p-4'>Rs {order.totalPrice}</td>
+                <td className='p-4'>{order.shippingAddress.address},{" "}{order.shippingAddress.city},{" "},{order.shippingAddress.country}</td>
                 <td className='p-4'>
                   <select 
                     value={order.status} 

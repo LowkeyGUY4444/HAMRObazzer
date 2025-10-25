@@ -24,6 +24,25 @@ const Checkout = () => {
         country: '',
         phone: '',
     });
+    
+      // this will help me to auto detect country....
+    useEffect(() => {
+        const fetchCountry = async () => {
+        try {
+            const res = await fetch("https://ipapi.co/json/");
+            const data = await res.json();
+            if (data && data.country_name) {
+            setShippingAddress((prev) => ({
+                ...prev,
+                country: data.country_name,
+            }));
+            }
+        } catch (error) {
+            console.error("Error fetching country:", error);
+        }
+        };
+        fetchCountry();
+    }, []);
 
     //ensure cart is loaded before procedding
     useEffect(()=>{
@@ -158,6 +177,7 @@ const Checkout = () => {
                     value={ShippingAddress.country} 
                     onChange={(e) => setShippingAddress({...ShippingAddress, country: e.target.value})} 
                     className='w-full p-2 border rounded' 
+                    readOnly
                     required />
             </div>
             <div className='mb-4'>

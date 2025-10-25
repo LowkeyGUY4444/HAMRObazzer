@@ -43,27 +43,22 @@ const Home = () => {
         <Hero />
         <GenderCollection />
         <NewArrivals />
-
-
-
         {/* Best Seller */}
         <h2 className='text-3xl font-bold mb-4 text-center'>Best Seller</h2>
         {bestSellerProduct ?(<ProductDetails productId={bestSellerProduct._id} />):(
           <p className='text-center'>Loading best seller product ....</p>
         )}
-        
 
         {/* collection for  Women section */}
-        <div className='container mx-auto '>
+        <div className='container mx-auto border-b border-gray-300 '>
           <h2 className='text-3xl font-bold mb-4 text-center'>
             Top Wares for Men
           </h2>
            <Maylike products={products} loading={loading} error={error} />
         </div>
-        <FeaturedCollection />
-
+        {/* //<FeaturedCollection /> */}
         <FeatureSection />
-
+        
 
     </div>
   );

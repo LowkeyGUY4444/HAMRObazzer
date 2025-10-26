@@ -253,13 +253,13 @@ const ProductDetails = ({ productId }) => {
       setMainImage(selectedProduct.images[0].url);
     }
   }, [selectedProduct]);
-//help to convert the price in the native currency..................
+//help to convert the price in the native currency
   const getLocalizedPrice = (price) => {
     let convertedPrice = price;
     let currency = 'USD';
 
     if (userCountry === 'NP') {
-      currency = 'Rs';
+      currency = 'NPR';
       convertedPrice = price;
     } else if (userCountry === 'IN') {
       currency = 'INR';

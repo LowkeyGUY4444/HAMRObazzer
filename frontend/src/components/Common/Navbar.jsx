@@ -35,7 +35,7 @@ const Navbar = () => {
   <nav className='container mx-auto py-4 flex items-center justify-between px-4'>
     {/* left-logo */}
     <div>
-    <Link to='/' className='text-2xl font-semibold text-gray-800'>HAMRObazzer</Link>
+    <Link to='/' className='text-2xl font-semibold text-gray-800'>HAMRObazaar</Link>
     </div>
     {/* center-links */}
     <div className='hidden md:flex items-center space-x-6'>

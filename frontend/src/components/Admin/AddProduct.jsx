@@ -239,6 +239,22 @@ const AddProduct = () => {
             className="w-full border border-gray-300 rounded-md p-2"
           />
         </div>
+        {/* Material */}
+        <div className="mb-6">
+          <label className="block font-semibold mb-2">Material (comma-separated)</label>
+          <input
+            type="text"
+            value={productData.material.join(", ")}
+            onChange={(e) =>
+              setProductData({
+                ...productData,
+                material: e.target.value.split(",").map((m) => m.trim()),
+              })
+            }
+            placeholder="e.g. Cotton, Leather, Polyester"
+            className="w-full border border-gray-300 rounded-md p-2"
+          />
+        </div>
 
         {/* Image Upload */}
         <div className="mb-6">

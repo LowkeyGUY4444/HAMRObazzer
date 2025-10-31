@@ -499,14 +499,14 @@ const Checkout = () => {
               </button>
             ) : (
               <div>
-                <PaypalButton
+                {/* <PaypalButton
                   amount={cart.totalPrice} // you can also use converted total here if needed
                   onSuccess={handlePaymentSuccess}
                   onError={(err) => {
                     console.log(err);
                     alert('Payment Unsuccessful! Try again');
                   }}
-                />
+                /> */}
 
                 <button
                   onClick={async () => {

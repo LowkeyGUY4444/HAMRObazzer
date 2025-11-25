@@ -16,20 +16,10 @@ router.post("/register",async(req, res)=>{
         //res.send({name, email, password});
         let user = await User.findOne({email});
 
-        if (user) return res.status(400).json({message:"User alrady exists!"})
+        if (user) return res.status(400).json({message:"User already exists!"})
 
         user= new User({name, email, password});
         await user.save();
-
-        // res.status(201).json({
-        //     user:{
-        //         _id: user._id,
-        //         name: user.name,
-        //         email: user.email,
-        //         role: user.role,
-        //     }
-        // });
-
 
         // create JWT payload
         const payload ={user: {id: user._id, role: user.role}};

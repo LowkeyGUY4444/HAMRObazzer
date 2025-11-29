@@ -99,7 +99,7 @@ const Login = () => {
 
                 </form>
             </div>
-
+            
             <div className='hidden md:block w-1/2 bg-gray-800'>
                 <div className='h-full flex flex-col justify-center items-center'>
                     <img
@@ -112,7 +112,6 @@ const Login = () => {
         </div>
     );
 };
-
 export default Login;
 
 // import React, { useEffect } from 'react'

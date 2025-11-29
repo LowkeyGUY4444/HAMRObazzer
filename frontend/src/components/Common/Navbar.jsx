@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <>
             <nav className='container mx-auto py-4 flex items-center justify-between px-4'>
-                {/* left-logo */}
+                {/* left-logo  */}
                 <div>
                     <Link to='/' className='text-2xl font-semibold text-gray-800'>HAMRObazar</Link>
                 </div>
